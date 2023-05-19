@@ -26,7 +26,8 @@
             </div>
             <div id="thumbnails"> 
                 <div class="img-thumbnails opacity ">
-                    <img :src="images[immagineAttiva].img">
+                    <img v-for="img in images"
+                    :src="img.img" class="">
                 </div>
             </div>
         </div>

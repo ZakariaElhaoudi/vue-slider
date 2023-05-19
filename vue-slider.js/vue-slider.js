@@ -37,7 +37,7 @@ createApp({
     
   },
   methods: {
-    topButton(index) {
+    topButton() {
 
         this.immagineAttiva++;
         if (this.immagineAttiva >= this.images.length) {
@@ -46,6 +46,16 @@ createApp({
           this.immagineAttiva = this.images.length - 1;
         }
       },
+
+    //   topButton(index) {
+
+    //     this.immagineAttiva;
+    //     if (this.immagineAttiva >= this.images.length) {
+    //       this.immagineAttiva = 0;
+    //     } else if (this.immagineAttiva < 0) {
+    //       this.immagineAttiva = this.images.length - 1;
+    //     }
+    //   },
       
 }
 }).mount('#app')
