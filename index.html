@@ -12,13 +12,13 @@
     <div id="app">
         <div id="container">
             <div id="slide">
-                <div class="top-arrow"><i class="fa-solid fa-chevron-up"></i></div>
+                <div class="top-arrow" @click="topButton(immagineAttiva)"><i class="fa-solid fa-chevron-up"></i></div>
                 <div id="list-item">
                     <div class ="square">  
-                        <img :src="images[0].img" alt="immagine">
+                        <img :src="images[immagineAttiva].img" alt="immagine">
                         <div class ="dati">
-                            <h2>{{ images[0].title }}</h2> 
-                            {{images[0].text}}
+                            <h2>{{ images[immagineAttiva].title }}</h2> 
+                            {{images[immagineAttiva].text}}
                         </div>
                     </div>
                 </div>
@@ -26,8 +26,7 @@
             </div>
             <div id="thumbnails"> 
                 <div class="img-thumbnails opacity ">
-                    <img :src="images[0].img">
-                    {{message}}
+                    <img :src="images[immagineAttiva].img">
                 </div>
             </div>
         </div>

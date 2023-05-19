@@ -5,7 +5,6 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-
         immagineAttiva: 0,
         images: [
             {
@@ -38,7 +37,8 @@ createApp({
     
   },
   methods: {
-    topButton() {
+    topButton(index) {
+
         this.immagineAttiva++;
         if (this.immagineAttiva >= this.images.length) {
           this.immagineAttiva = 0;
@@ -46,5 +46,6 @@ createApp({
           this.immagineAttiva = this.images.length - 1;
         }
       },
+      
 }
 }).mount('#app')
