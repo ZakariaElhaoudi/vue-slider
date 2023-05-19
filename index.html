@@ -25,9 +25,9 @@
                 <div class="bottom-arrow"><i class="fa-solid fa-chevron-down"></i></div>
             </div>
             <div id="thumbnails"> 
-                <div class="img-thumbnails opacity ">
-                    <img v-for="img in images"
-                    :src="img.img" class="">
+                <div class="img-thumbnails">
+                    <img v-for="(img,index) in images":src="img.img" class="opacity"
+                    :class="immagineAttiva === index ? 'active' : ''">
                 </div>
             </div>
         </div>
