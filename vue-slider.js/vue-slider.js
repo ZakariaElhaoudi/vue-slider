@@ -47,15 +47,15 @@ createApp({
         }
       },
 
-    //   topButton(index) {
+      bottomButton() {
 
-    //     this.immagineAttiva;
-    //     if (this.immagineAttiva >= this.images.length) {
-    //       this.immagineAttiva = 0;
-    //     } else if (this.immagineAttiva < 0) {
-    //       this.immagineAttiva = this.images.length - 1;
-    //     }
-    //   },
+        this.immagineAttiva--;
+        if (this.immagineAttiva < 0) {
+          this.immagineAttiva = this.images.length - 1;
+        }else if (this.immagineAttiva >= this.images.length) {
+            this.immagineAttiva = 0;
+        }
+      },
       
 }
 }).mount('#app')
