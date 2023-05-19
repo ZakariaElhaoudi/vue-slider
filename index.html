@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="vue-slider.css/vue-slider.css">
+    <title>JS-Vue-Slider</title>
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <div id="slide">
+                <div class="top-arrow"><i class="fa-solid fa-chevron-up"></i></div>
+                <div id="list-item">
+                    <div class ="square">  
+                        <img :src="immagini.image" alt="immagine">
+                        <div class ="dati"><h2>${datiImmagine.title}</h2> ${datiImmagine.text}</div>
+                        </div>
+                </div>
+                <div class="bottom-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div id="thumbnails"> 
+                <div class="img-thumbnails opacity ">
+                    <img src="img/01.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="vue-slider.js/vue-slider.js"></script>
+</body>
+</html>
