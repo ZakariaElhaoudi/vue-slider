@@ -14,7 +14,7 @@
             <div id="slide">
                 <div class="top-arrow" @click="topButton(immagineAttiva)"><i class="fa-solid fa-chevron-up"></i></div>
                 <div id="list-item">
-                    <div class ="square">  
+                    <div class ="square" @mouseenter="stopAutoPlay" @mouseleave="startAutoPlay">  
                         <img :src="images[immagineAttiva].img" alt="immagine">
                         <div class ="dati">
                             <h2>{{ images[immagineAttiva].title }}</h2> 

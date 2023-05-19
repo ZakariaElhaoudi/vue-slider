@@ -56,6 +56,15 @@ createApp({
             this.immagineAttiva = 0;
         }
       },
-      
+
+      startAutoPlay() {
+        this.autoplayInterval = setInterval(() => {
+          this.topButton();
+        //   this.bottomButton
+        }, 3000);
+      },
+      stopAutoPlay() {
+        clearInterval(this.autoplayInterval)
+      }
 }
 }).mount('#app')
