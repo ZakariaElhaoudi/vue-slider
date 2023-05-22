@@ -57,6 +57,10 @@ createApp({
         }
       },
 
+      imgThumb(index){
+        this.immagineAttiva = index ;
+      },
+
       startAutoPlay() {
         this.autoplayInterval = setInterval(() => {
           this.topButton();
